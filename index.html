@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -73,12 +74,112 @@
         <div class="hero__container container">
           <div class="hero__top">
             <div class="hero__top-container container flex">
-              <ul class="hero__list list-reset flex">
-                <li class="hero__item">Реализм</li>
-                <li class="hero__item">Импрессионизм</li>
-                <li class="hero__item">Постимпрессионизм</li>
-                <li class="hero__item">Авангард</li>
-                <li class="hero__item">Футуризм</li>
+              <ul class="menu__list list-reset flex">
+                <li class="menu__item">
+                  <button class="menu__btn btn-reset">Реализм
+                    <svg class="menu__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6.00001L0.999997 1" stroke="white"/>
+                    </svg>
+                  </button>
+                  <div class="menu__dropdown dropdown">
+                    <div class="dropdown__simplebar">
+                      <ul class="dropdown__list list-reset">
+                        <li class="dropdown__item realism__1">Тинторетто</li>
+                        <li class="dropdown__item realism__2">Фридрих</li>
+                        <li class="dropdown__item realism__3">Леонардо</li>
+                        <li class="dropdown__item realism__4">Верроккьо</li>
+                        <li class="dropdown__item realism__1">Тинторетто</li>
+                        <li class="dropdown__item realism__2">Фридрих</li>
+                        <li class="dropdown__item realism__3">Леонардо</li>
+                        <li class="dropdown__item realism__4">Верроккьо</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <button class="menu__btn btn-reset">Импрессионизм
+                    <svg class="menu__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6.00001L0.999997 1" stroke="white"/>
+                    </svg>
+                  </button>
+                  <div class="menu__dropdown dropdown">
+                    <div class="dropdown__simplebar">
+                      <ul class="dropdown__list list-reset">
+                        <li class="dropdown__item impressionism__1">Моне</li>
+                        <li class="dropdown__item impressionism__2">Сислей</li>
+                        <li class="dropdown__item impressionism__3">Мане</li>
+                        <li class="dropdown__item impressionism__4">Ренуар</li>
+                        <li class="dropdown__item impressionism__1">Моне</li>
+                        <li class="dropdown__item impressionism__2">Сислей</li>
+                        <li class="dropdown__item impressionism__3">Мане</li>
+                        <li class="dropdown__item impressionism__4">Ренуар</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <button class="menu__btn btn-reset">Постимпрессионизм
+                    <svg class="menu__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6.00001L0.999997 1" stroke="white"/>
+                    </svg>
+                  </button>
+                  <div class="menu__dropdown dropdown">
+                    <div class="dropdown__simplebar">
+                      <ul class="dropdown__list list-reset">
+                        <li class="dropdown__item postimpressionism__1">Ван Гог</li>
+                        <li class="dropdown__item postimpressionism__2">Сезанн</li>
+                        <li class="dropdown__item postimpressionism__3">Гоген</li>
+                        <li class="dropdown__item postimpressionism__4">Сёра</li>
+                        <li class="dropdown__item postimpressionism__1">Ван Гог</li>
+                        <li class="dropdown__item postimpressionism__2">Сезанн</li>
+                        <li class="dropdown__item postimpressionism__3">Гоген</li>
+                        <li class="dropdown__item postimpressionism__4">Сёра</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <button class="menu__btn btn-reset">Авангард
+                    <svg class="menu__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6.00001L0.999997 1" stroke="white"/>
+                    </svg>
+                  </button>
+                  <div class="menu__dropdown dropdown">
+                    <div class="dropdown__simplebar">
+                      <ul class="dropdown__list list-reset">
+                        <li class="dropdown__item avangard__1">Кандинский</li>
+                        <li class="dropdown__item avangard__2">Маринетти</li>
+                        <li class="dropdown__item avangard__3">Малевич</li>
+                        <li class="dropdown__item avangard__4">Пикассо</li>
+                        <li class="dropdown__item avangard__1">Кандинский</li>
+                        <li class="dropdown__item avangard__2">Маринетти</li>
+                        <li class="dropdown__item avangard__3">Малевич</li>
+                        <li class="dropdown__item avangard__4">Пикассо</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <button class="menu__btn btn-reset">Футуризм
+                    <svg class="menu__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L6 6.00001L0.999997 1" stroke="white"/>
+                    </svg>
+                  </button>
+                  <div class="menu__dropdown dropdown">
+                    <div class="dropdown__simplebar">
+                      <ul class="dropdown__list list-reset">
+                        <li class="dropdown__item futurism__1">Карра</li>
+                        <li class="dropdown__item futurism__2">Прателла</li>
+                        <li class="dropdown__item futurism__3">Северини</li>
+                        <li class="dropdown__item futurism__4">Балла</li>
+                        <li class="dropdown__item futurism__1">Карра</li>
+                        <li class="dropdown__item futurism__2">Прателла</li>
+                        <li class="dropdown__item futurism__3">Северини</li>
+                        <li class="dropdown__item futurism__4">Балла</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
               </ul>
               <div class="hero__search flex">
                 <button class="search__button btn-reset">
@@ -124,7 +225,7 @@
             <h2 class="gallery__title title">Галерея</h2>
             <p class="gallery__filter">Фильтр</p>
             <div>
-              <select name="Искусство">
+              <select class="gallery__select" name="Искусство">
                 <option>Живопись</option>
                 <option>Рисунок</option>
                 <option>Скульптура</option>
@@ -442,7 +543,8 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-  <script src="/index.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

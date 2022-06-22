@@ -243,13 +243,13 @@ p {
 }
 
 .hero__top {
-  z-index: 5;
+  z-index: 100;
   position: absolute;
   padding: 23px 0;
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero__top-container {
@@ -266,11 +266,8 @@ p {
   pointer-events: none;
 }
 
-.hero__item {
-  margin-right: 111px;
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--color-white);
+.hero__list {
+  align-items: center;
 }
 
 .hero__title {
@@ -321,6 +318,7 @@ p {
   background-color: var(--color-active);
 }
 
+/* search */
 .hero__search {
   align-items: center;
 }
@@ -359,6 +357,272 @@ p {
 
 .search__input:active {
   border-bottom: 1px solid var(--color-active);
+}
+
+/* hero dropdown */
+.menu__item {
+  margin-right: 95px;
+}
+
+.menu__btn {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-white);
+  white-space: nowrap;
+  transition: color .3s ease;
+}
+
+.menu__btn.btn__active .menu__svg {
+  transform: rotate(180deg);
+  transition: rotate .3s ease;
+}
+
+.menu__btn:focus-visible {
+  outline: solid 2px var(--color-active);
+  background-color: var(--color-active);
+  color: var(--color-white);
+}
+
+.menu__btn:hover {
+  color: var(--color-promo);
+}
+
+.menu__btn:active {
+  color: var(--color-active);
+}
+
+.menu__btn:hover .menu__svg path {
+  stroke: var(--color-promo);
+}
+
+.menu__btn:active .menu__svg path {
+  stroke: var(--color-active);
+}
+
+.menu__svg {
+  transform: translateX(2px) translateY(-1px);
+  flex-shrink: 0;
+}
+
+.menu__svg path {
+  transition: stroke .3s ease;
+}
+
+.dropdown {
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+  padding-left: 35px;
+  padding-right: 20px;
+  position: absolute;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.dropdown.dropdown__active {
+  z-index: 10;
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown__item:focus-visible {
+  outline: solid 2px var(--color-hover);
+}
+
+.dropdown__item:hover {
+  outline: solid 2px var(--color-hover);
+}
+
+.dropdown__item:active {
+  outline: none;
+}
+
+.menu__btn.menu__svg.dropdown__active {
+  transform: rotate(-45deg);
+}
+
+.dropdown__item {
+  cursor: pointer;
+  z-index: 200;
+  margin-bottom: 20px;
+  width: 220px;
+  min-height: 40px;
+  padding-top: 9px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-white);
+  outline: solid 2px transparent;
+  transition: outline .3s ease;
+}
+
+.dropdown__list {
+  padding-left: 2px;
+}
+
+.dropdown__list:first-child {
+  padding-top: 2px;
+}
+
+.dropdown__list:last-child {
+  padding-bottom: 30px;
+}
+
+.dropdown__item:hover .dropdown.dropdown__active{
+  offset: solid 2px var(--color-promo);
+}
+
+.realism__1 {
+  background-image: url('/img/hero__select/realism__1.jpg');
+}
+.realism__2 {
+  background-image: url('/img/hero__select/realism__2.jpg');
+}
+.realism__3 {
+  background-image: url('/img/hero__select/realism__3.jpg');
+}
+.realism__4 {
+  background-image: url('/img/hero__select/realism__4.jpg');
+}
+
+.impressionism__1 {
+  background-image: url('/img/hero__select/impressionism__1.jpg');
+}
+.impressionism__2 {
+  background-image: url('/img/hero__select/impressionism__2.jpg');
+}
+.impressionism__3 {
+  background-image: url('/img/hero__select/impressionism__3.jpg');
+}
+.impressionism__4 {
+  background-image: url('/img/hero__select/impressionism__4.jpg');
+}
+
+.postimpressionism__1 {
+  background-image: url('/img/hero__select/postimpressionism__1.jpg');
+}
+.postimpressionism__2 {
+  background-image: url('/img/hero__select/postimpressionism__2.jpg');
+}
+.postimpressionism__3 {
+  background-image: url('/img/hero__select/postimpressionism__3.jpg');
+}
+.postimpressionism__4 {
+  background-image: url('/img/hero__select/postimpressionism__4.jpg');
+}
+
+.avangard__1 {
+  background-image: url('/img/hero__select/avangard__1.jpg');
+}
+.avangard__2 {
+  background-image: url('/img/hero__select/avangard__2.jpg');
+}
+.avangard__3 {
+  background-image: url('/img/hero__select/avangard__3.jpg');
+}
+.avangard__4 {
+  background-image: url('/img/hero__select/avangard__4.jpg');
+}
+
+.futurism__1 {
+  background-image: url('/img/hero__select/futurism__1.jpg');
+}
+.futurism__2 {
+  background-image: url('/img/hero__select/futurism__2.jpg');
+}
+.futurism__3 {
+  background-image: url('/img/hero__select/futurism__3.jpg');
+}
+.futurism__4 {
+  background-image: url('/img/hero__select/futurism__4.jpg');
+}
+
+.realism__1:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__1.jpg');
+}
+.realism__2:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__2.jpg');
+}
+.realism__3:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__3.jpg');
+}
+.realism__4:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__4.jpg');
+}
+
+.impressionism__1:active:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__1.jpg');
+}
+.impressionism__2:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__2.jpg');
+}
+.impressionism__3:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__3.jpg');
+}
+.impressionism__4:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__4.jpg');
+}
+
+.postimpressionism__1:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__1.jpg');
+}
+.postimpressionism__2:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__2.jpg');
+}
+.postimpressionism__3:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__3.jpg');
+}
+.postimpressionism__4:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__4.jpg');
+}
+
+.avangard__1:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__1.jpg');
+}
+.avangard__2:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__2.jpg');
+}
+.avangard__3:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__3.jpg');
+}
+.avangard__4:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__4.jpg');
+}
+
+.futurism__1:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__1.jpg');
+}
+.futurism__2:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__2.jpg');
+}
+.futurism__3:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__3.jpg');
+}
+.futurism__4:active {
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__4.jpg');
+}
+
+.dropdown__item:last-child {
+  margin-bottom: 0px;
+}
+
+.dropdown__simplebar {
+  height: 240px;
+}
+
+.dropdown__simplebar .simplebar-track.simplebar-vertical {
+  background-color: #000;
+  width: 2px;
+}
+
+.dropdown__simplebar .simplebar-scrollbar {
+  width: 2px;
+  background-color: var(--color-white);
 }
 
 /* about */
