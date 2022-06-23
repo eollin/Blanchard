@@ -433,6 +433,7 @@ p {
 }
 
 .dropdown__item:hover {
+  outline-offset: -2px;
   outline: solid 2px var(--color-hover);
 }
 
@@ -471,10 +472,6 @@ p {
 
 .dropdown__list:last-child {
   padding-bottom: 30px;
-}
-
-.dropdown__item:hover .dropdown.dropdown__active{
-  offset: solid 2px var(--color-promo);
 }
 
 .realism__1 {
@@ -863,7 +860,7 @@ p {
   padding-top: 20px;
 }
 
-.swiper__navigation {
+.swiper__navigation-2 {
   align-items: center;
   width: 130px;
   margin-bottom: 30px;
@@ -1038,35 +1035,84 @@ p {
   margin-bottom: 30px;
 }
 
-.projects__text {
+.partners__title {
   margin-bottom: 23px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
 }
 
-.swiper-box-3 {
-  max-width: 1920px;
-  padding: 0 75px;
-  margin: 0 auto;
-}
-
-.swiper-container-3 {
-  height: 150px;
-}
-
-.swiper__slide-3 {
-  width: 450px;
-  margin-right: 50px;
-}
-
-.swiper-container-3 {
-  width: 1450px;
+.partners__swiper {
+  position: relative;
+  width: 100%;
   overflow: hidden;
 }
 
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {}
+.partners__swiper-container {
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1450px;
+}
+
+.partners__swiper-slide-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.partners__swiper-slide-img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.partners__swiper-slide-img:active {
+  outline-offset: -1px;
+  outline: 1px solid var(--color-promo);
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.partners__btn {
+  position: absolute;
+  top: 35%;
+}
+
+.partners__button-prev {
+  left: 0;
+}
+
+.partners__button-next {
+  right: 0;
+}
+
+.partners__btn:focus-visible .partners__icon path {
+  outline: none;
+  fill: #ECECEC;
+  stroke: var(--color-promo)
+}
+
+.partners__btn:hover .partners__icon path {
+  fill: #D1A9F0;
+}
+
+.partners__btn:active .partners__icon path {
+  fill: #D1A9F0;
+  stroke: var(--color-promo)
+}
+
+.partners__btn:disabled .partners__icon path {
+  fill: #ECECEC;
+  opacity: .3;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.partners__btn path {
+  stroke: var(--color-white);
+  transition: fill .3s ease, stroke .3s ease;
+}
 
 /* contacts */
 .contacts {

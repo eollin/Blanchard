@@ -44,20 +44,15 @@ const swiper2 = new Swiper('.swiper-container-2', {
   },
 });
 
-const swiper3 = new Swiper('.swiper-container-3', {
+const swiper3 = new Swiper('.partners__swiper-container', {
   slidesPerView: 3,
   // slidesPerGroup: 3,
   spaceBetween: 50,
-  loop: false,
+  loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.partners__button-next',
+    prevEl: '.partners__button-prev',
     hideOnClick: 'false'
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
   },
 
   a11y: {
