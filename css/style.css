@@ -216,7 +216,7 @@ p {
 .hero {
   position: relative;
   height: 100%;
-  min-height: 700px;
+  min-height: 100vh;
 }
 
 .swiper-box-1 {
@@ -225,7 +225,7 @@ p {
 }
 
 .swiper-container-1 {
-  min-height: 700px;
+  min-height: 100vh;
   position: absolute;
   left: 0;
   right: 0;
@@ -236,7 +236,7 @@ p {
 
 .swiper-slide-1 {
   height: 100%;
-  min-height: 700px;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -863,15 +863,16 @@ p {
   padding-top: 20px;
 }
 
-.swiper__btns {
+.swiper__navigation {
+  align-items: center;
+  width: 130px;
   margin-bottom: 30px;
 }
 
-.swiper__btn-text {
-  padding: 0 12px;
-  font-size: 16px;
-  line-height: 32px;
+.swiper-container-horizontal> .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
   color: var(--color-white);
+  text-align: center;
+  transform: translateY(-2px);
 }
 
 .swiper__btn:hover .swiper__icon path {
@@ -882,8 +883,15 @@ p {
   fill: var(--color-active);
 }
 
+.swiper__btn:disabled .swiper__icon path {
+  fill: #666;
+  opacity: .3;
+  cursor: auto;
+  pointer-events: none;
+}
+
 .swiper__icon path {
-  transition: fill 3s ease;
+  transition: fill .3s ease;
 }
 
 .swiper-container-2 {
