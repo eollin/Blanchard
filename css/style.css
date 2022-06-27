@@ -902,11 +902,11 @@ p {
 
 /* catalog */
 .catalog__left {
-  width: 50%;
+  max-width: 750px;
+  margin-right: 50px;
 }
 
 .catalog__descr {
-  width: 70%;
   margin-bottom: 50px;
 }
 
@@ -935,6 +935,29 @@ p {
   font-size: 24px;
   line-height: 32px;
   color: var(--color-text);
+}
+
+.catalog__right {
+  max-width: 800px;
+}
+
+/* accordion */
+.accordion {
+  width: 800px;
+}
+
+.accordion__title {
+  height: 114px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__icon path {
+  stroke: var(--color-white);
+}
+
+.accordion__painter-list {
+  columns: 3;
 }
 
 /* events */

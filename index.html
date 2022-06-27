@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -318,14 +319,174 @@
             </p>
           </div>
           <div class="catalog__right">
-            <ul class="catalog__list list-reset">
-              <li class="catalog__item">C 1400 по 1499 гг.</li>
-              <li class="catalog__item">C 1500 по 1599 гг.</li>
-              <li class="catalog__item">C 1600 по 1699 гг.</li>
-              <li class="catalog__item">C 1700 по 1799 гг.</li>
-              <li class="catalog__item">C 1800 по 1899 гг.</li>
-              <li class="catalog__item">C 1900 по 1999 гг.</li>
-              <li class="catalog__item">C 2000 г.</li>
+            <ul class="accordion list-reset">
+              <li class="accordion__item">
+                <h3 class="accordion__title flex">C 1400 по 1499 гг.
+                  <svg class="accordion__icon" width="48" height="48" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="black"/>
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                  </svg>
+                </h3>
+                <ul class="accordion__painter-list list-reset">
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Бенедетто ди Биндо</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Бергоньоне, Амброджо</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Биссоло, Франческо</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Больтраффио, Джованни</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Бонсиньори, Франческо</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Боттичини, Рафаэлло</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Брамантино</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Бреа, Людовико</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Бьяджо д’Антонио Туччи</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Веккьетта</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Андреа Верроккьо</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Доменико Гирландайо</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Беноццо Гоццоли</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Граначчи, Франческо</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Грегорио ди Чекко</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Джованни да Удине</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Джованни ди Паоло</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Джорджоне</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Парентино, Бернардо</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Пезеллино</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Пьетро Перуджино</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Перуцци, Бальдассаре</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Пизанелло</a>
+                  </li>
+                  <li class="accordion__painter-item">
+                    <a href="#" class="accordion__painter-link">Пинтуриккьо</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="accordion__item">
+                <h3 class="accordion__title flex">C 1500 по 1599 гг.
+                  <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="black"/>
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                  </svg>
+                </h3>
+                <div class="accordion__empty">
+                  <p>Здесь пока пусто</p>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="#">В галерею</a>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <h3 class="accordion__title flex">C 1600 по 1699 гг.
+                  <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="black"/>
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                  </svg>
+                </h3>
+                <div class="accordion__empty">
+                  <p>Здесь пока пусто</p>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="#">В галерею</a>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <h3 class="accordion__title flex">C 1700 по 1799 гг.
+                  <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="black"/>
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                  </svg>
+                </h3>
+                <div class="accordion__empty">
+                  <p>Здесь пока пусто</p>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="#">В галерею</a>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <h3 class="accordion__title flex">C 1800 по 1899 гг.
+                  <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="black"/>
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                  </svg>
+                </h3>
+                <div class="accordion__empty">
+                  <p>Здесь пока пусто</p>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="#">В галерею</a>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <h3 class="accordion__title flex">C 1900 по 1999 гг.
+                  <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="black"/>
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                  </svg>
+                </h3>
+                <div class="accordion__empty">
+                  <p>Здесь пока пусто</p>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="#">В галерею</a>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <h3 class="accordion__title flex">C 2000 г.
+                  <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                  <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" stroke="black"/>
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                  </svg>
+                </h3>
+                <div class="accordion__empty">
+                  <p>Здесь пока пусто</p>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="#">В галерею</a>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -582,6 +743,8 @@
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/index.js"></script>
 </body>
 

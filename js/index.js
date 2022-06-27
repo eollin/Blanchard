@@ -116,3 +116,10 @@ btns.forEach(item => {
     this.classList.toggle(activeClassbtns);
   })
 })
+
+$(".accordion").accordion({
+  heightStyle: "content",
+  collapsible: true,
+  icons: false
+  });
+
