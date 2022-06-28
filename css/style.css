@@ -1096,6 +1096,15 @@ p {
   font-size: 16px;
   line-height: 32px;
   color: var(--color-promo) !important;
+  transition: color .3s ease;
+}
+
+.accordion__empty-link:hover {
+  color: var(--color-hover) !important;
+}
+
+.accordion__empty-link:active {
+  color: var(--color-active) !important;
 }
 
 .accordion__empty-img {
