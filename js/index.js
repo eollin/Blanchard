@@ -1,12 +1,8 @@
 // swiper
-const swiper = new Swiper('.swiper-container-1', {
+const swiper = new Swiper('.hero__swiper-container', {
   speed: 2000,
   slidesPerView: 1,
   loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
   autoplay: {
     delay: 5000,
@@ -17,9 +13,6 @@ const swiper = new Swiper('.swiper-container-1', {
     crossFade: true
   },
 
-  a11y: {
-    paginationBulletMessage: "Перейти к слайду {{index}}"
-  },
 });
 
 const swiper2 = new Swiper('.swiper-container-2', {
