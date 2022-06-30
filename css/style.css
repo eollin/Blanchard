@@ -1338,6 +1338,7 @@ p {
   margin-right: 20px;
   border: 1px solid #333333;
   border-radius: 100px;
+  transition: background-color .3s ease;
 }
 
 .form__input::placeholder {
@@ -1347,6 +1348,19 @@ p {
   color: var(--color-gray);
 }
 
+.form__input:focus {
+  outline: none;
+  background-color: var(--color-white);
+}
+
+.form__input:hover {
+  background-color: #ECECEC;
+}
+
+.form__input:active {
+  background-color: #ECECEC;
+}
+
 .form__btn {
   padding: 14px 35px;
   font-weight: 700;
@@ -1354,6 +1368,22 @@ p {
   color: var(--color-promo);
   border: 2px solid var(--color-promo);
   border-radius: 100px;
+  transition: color .3s ease, background-color .3s ease, border .3s ease;
+}
+
+.form__btn:focus-visible {
+  outline: solid 2px var(--color-promo);
+  outline-offset: 2px;
+}
+
+.form__btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-promo);
+}
+
+.form__btn:active {
+  border: solid 2px #D1A9F0;
+  background-color: var(--color-active);
 }
 
 .contacts__info-text {
@@ -1364,10 +1394,23 @@ p {
 }
 
 .contacts__link {
-  margin-right: 16px;
-  width: 40px;
+  display: block;
   height: 40px;
+  width: 40px;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid transparent;
   transition: opacity .3s ease;
+}
+
+.contacts__link-whatsapp {
+  background-image: url('/img/whatsapp.svg');
+}
+
+.contacts__link-telegram {
+  background-image: url('/img/telegram.svg');
 }
 
 .contacts__link:focus-visible {
@@ -1378,8 +1421,10 @@ p {
   opacity: .5;
 }
 
-.contacts__link:active .contacts__icon path {
-  stroke: var(--color-active);
+.contacts__link:active {
+  opacity: 1;
+  border-radius: 100px;
+  border: 1px solid var(--color-active);
 }
 
 /* map */
