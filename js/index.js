@@ -67,17 +67,18 @@ const choices = new Choices(element, {
   placeholder: true
 });
 
+// maps
 ymaps.ready(init);
   function init(){
       var myMap = new ymaps.Map("map", {
-          center: [48.872185073737896,2.354223999999991],
+          center: [55.75846806898367,37.60108849999989],
           zoom: 15
       });
 
-      var myPlacemark = new ymaps.Placemark([48.872185073737896,2.354223999999991], {}, {
+      var myPlacemark = new ymaps.Placemark([55.75846806898367,37.60108849999989], {}, {
         iconLayout: 'default#image',
-        iconImageHref: 'location.svg',
-        iconImageSize: [28, 40],
+        iconImageHref: 'img/location.png',
+        iconImageSize: [20, 20],
       });
 
       myMap.geoObjects.add(myPlacemark);
