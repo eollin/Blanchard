@@ -172,7 +172,7 @@
             </div>
           </li>
         </ul>
-        <div class="hero__search flex">
+        <div class="header__search flex">
           <button class="search__button btn-reset">
             <svg class="search__icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -258,9 +258,9 @@
           </div>
         </div>
         <div class="gallery__swiper flex">
-          <div class="swiper-container swiper-container-2">
-            <div class="swiper__navigation-2 flex">
-              <button class="swiper__btn swiper-button-prev-2 btn-reset">
+          <div class="swiper-container gallery__swiper-container">
+            <div class="gallery__swiper-navigation flex">
+              <button class="swiper__btn gallery__button-prev btn-reset">
                 <svg class="swiper__icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -272,9 +272,9 @@
                   <path d="M16 20L11 15L16 10" stroke="white" />
                 </svg>
               </button>
-              <div class="swiper-pagination-2 swiper-pagination-fraction">
+              <div class="gallery__swiper-pagination swiper-pagination-fraction">
               </div>
-              <button class="swiper__btn swiper-button-next-2 btn-reset">
+              <button class="swiper__btn gallery__button-next btn-reset">
                 <svg class="swiper__icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -287,18 +287,18 @@
                 </svg>
               </button>
             </div>
-            <div class="swiper-wrapper swiper-wrapper-2">
-              <div aria-role="img" class="swiper-slide swiper-slide-2"
+            <div class="swiper-wrapper gallery__swiper-wrapper">
+              <div aria-role="img" class="swiper-slide gallery__swiper-slide"
                 style="background-image: url(./img/gallery__1.jpg);"></div>
-              <div aria-role="img" class="swiper-slide swiper-slide-2"
+              <div aria-role="img" class="swiper-slide gallery__swiper-slide"
                 style="background-image: url(./img/gallery__2.jpg);"></div>
-              <div aria-role="img" class="swiper-slide swiper-slide-2"
+              <div aria-role="img" class="swiper-slide gallery__swiper-slide"
                 style="background-image: url(./img/gallery__3.jpg);"></div>
-              <div aria-role="img" class="swiper-slide swiper-slide-2"
+              <div aria-role="img" class="swiper-slide gallery__swiper-slide"
                 style="background-image: url(./img/gallery__4.jpg);"></div>
-              <div aria-role="img" class="swiper-slide swiper-slide-2"
+              <div aria-role="img" class="swiper-slide gallery__swiper-slide"
                 style="background-image: url(./img/gallery__5.jpg);"></div>
-              <div aria-role="img" class="swiper-slide swiper-slide-2"
+              <div aria-role="img" class="swiper-slide gallery__swiper-slide"
                 style="background-image: url(./img/gallery__6.jpg);"></div>
             </div>
           </div>
@@ -755,93 +755,121 @@
     <section id="events" class="events section-offset">
       <div class="events__container container">
         <h2 class="events__title title">События</h2>
-        <ul class="events__list list-reset flex">
-          <li class="events__item">
-            <article class="events__article article article-1">
-              <div class="article__content flex">
-                <p class="article__info">
-                  Музей им. Щусева<br>с 20 марта по 30 апреля
-                </p>
-                <p class="article__title">
-                  Книжная гравюра в&nbsp;живом восприятии
-                </p>
-                <p class="article__descr descr">
-                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                  продолжили его брат Давид и сын Ридольфо.
-                </p>
-                <button class="article__btn btn-reset">Подробнее</button>
+        <div class="events__swiper">
+          <div class="events__swiper-container swiper-container">
+            <div class="events__swiper-wrapper swiper-wrapper flex">
+              <div class="events__swiper-slide swiper-slide">
+                <article class="events__article article article-1">
+                  <div class="article__content flex">
+                    <p class="article__info">
+                      Музей им. Щусева<br>с 20 марта по 30 апреля
+                    </p>
+                    <p class="article__title">
+                      Книжная гравюра в&nbsp;живом восприятии
+                    </p>
+                    <p class="article__descr descr">
+                      Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                      продолжили его брат Давид и сын Ридольфо.
+                    </p>
+                    <button class="article__btn btn-reset">Подробнее</button>
+                  </div>
+                </article>
               </div>
-            </article>
-          </li>
-          <li class="events__item">
-            <article class="events__article article article-2">
-              <div class="article__content flex">
-                <p class="article__info">
-                  ММОМА<br>24 марта 19:00
-                </p>
-                <p class="article__title">
-                  &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
-                </p>
-                <p class="article__descr descr">
-                  Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-                  факта.
-                </p>
-                <button class="article__btn btn-reset">Подробнее</button>
+              <div class="events__swiper-slide swiper-slide">
+                <article class="events__article article article-2">
+                  <div class="article__content flex">
+                    <p class="article__info">
+                      ММОМА<br>24 марта 19:00
+                    </p>
+                    <p class="article__title">
+                      &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
+                    </p>
+                    <p class="article__descr descr">
+                      Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                      факта.
+                    </p>
+                    <button class="article__btn btn-reset">Подробнее</button>
+                  </div>
+                </article>
               </div>
-            </article>
-          </li>
-          <li class="events__item">
-            <article class="events__article article article-3">
-              <div class="article__content flex">
-                <p class="article__info">
-                  Еврейский музей<br>с 31 марта по 21 апреля
-                </p>
-                <p class="article__title">
-                  Выставка &laquo;Формация 2020&raquo;
-                </p>
-                <p class="article__descr descr">
-                  Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
-                  роль
-                  в&nbsp;формировании глубокомысленных рассуждений.
-                </p>
-                <button class="article__btn btn-reset">Подробнее</button>
+              <div class="events__swiper-slide swiper-slide">
+                <article class="events__article article article-3">
+                  <div class="article__content flex">
+                    <p class="article__info">
+                      Еврейский музей<br>с 31 марта по 21 апреля
+                    </p>
+                    <p class="article__title">
+                      Выставка &laquo;Формация 2020&raquo;
+                    </p>
+                    <p class="article__descr descr">
+                      Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
+                      роль
+                      в&nbsp;формировании глубокомысленных рассуждений.
+                    </p>
+                    <button class="article__btn btn-reset">Подробнее</button>
+                  </div>
+                </article>
               </div>
-            </article>
-          </li>
-          <!-- <li class="events__item">
-            <article class="events__article article article-4">
-              <div class="article__content flex">
-                <p class="article__info">
-                  ММАМ<br>с 8 апреля по 20 мая
-                </p>
-                <p class="article__title">
-                  Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора серебра&raquo;
-                </p>
-                <p class="article__descr descr">
-                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                  продолжили его брат Давид и&nbsp;сын Ридольфо.
-                </p>
-                <button class="article__btn btn-reset">Подробнее</button>
+              <div class="events__swiper-slide swiper-slide">
+                <article class="events__article article article-4">
+                  <div class="article__content flex">
+                    <p class="article__info">
+                      ММАМ<br>с 8 апреля по 20 мая
+                    </p>
+                    <p class="article__title">
+                      Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора серебра&raquo;
+                    </p>
+                    <p class="article__descr descr">
+                      Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                      продолжили его брат Давид и&nbsp;сын Ридольфо.
+                    </p>
+                    <button class="article__btn btn-reset">Подробнее</button>
+                  </div>
+                </article>
               </div>
-            </article>
-          </li>
-          <li class="events__item">
-            <article class="events__article article article-5">
-              <div class="article__content flex">
-                <p class="article__info">
-                  Третьяковка на Крымском валу<br>с 30 марта по 30 апреля
-                </p>
-                <p class="article__title">
-                  XXIV Международная биеннале молодого искусства
-                </p>
-                <p class="article__descr descr">
-                  Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования.
-                </p>
-                <button class="article__btn btn-reset">Подробнее</button>
+              <div class="events__swiper-slide swiper-slide">
+                <article class="events__article article article-5">
+                  <div class="article__content flex">
+                    <p class="article__info">
+                      Третьяковка на Крымском валу<br>с 30 марта по 30 апреля
+                    </p>
+                    <p class="article__title">
+                      XXIV Международная биеннале молодого искусства
+                    </p>
+                    <p class="article__descr descr">
+                      Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования.
+                    </p>
+                    <button class="article__btn btn-reset">Подробнее</button>
+                  </div>
+                </article>
               </div>
-            </article>
-          </li> -->
-        </ul>
+            </div>
+          </div>
+          <button class="events__btn events__button-prev btn-reset">
+            <svg class="events__icon" width="50" height="50" viewBox="-2 -2 34 34" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                fill="#ECECEC" />
+              <path
+                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                stroke="black" />
+              <path d="M16 20L11 15L16 10" stroke="black" />
+            </svg>
+          </button>
+          <button class="events__btn events__button-next btn-reset">
+            <svg class="events__icon" width="50" height="50" viewBox="-2 -2 34 34" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                fill="#ECECEC" />
+              <path
+                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                stroke="black" />
+              <path d="M14 20L19 15L14 10" stroke="black" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     <section id="projects" class="projects section-offset">

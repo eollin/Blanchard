@@ -563,7 +563,7 @@ p {
   top: 0;
   z-index: 5;
   position: absolute;
-  padding-top: 233px;
+  padding-top: 280px;
   pointer-events: none;
 }
 
@@ -857,7 +857,7 @@ p {
   padding-top: 20px;
 }
 
-.swiper__navigation-2 {
+.gallery__swiper-navigation {
   align-items: center;
   width: 130px;
   margin-bottom: 30px;
@@ -888,12 +888,12 @@ p {
   transition: fill .3s ease;
 }
 
-.swiper-container-2 {
+.gallery__swiper-container {
   width: 1150px;
   overflow: hidden;
 }
 
-.swiper-slide-2 {
+.gallery__swiper-slide {
   height: 350px;
 }
 
@@ -1134,13 +1134,66 @@ p {
 }
 
 /* events */
+.events__swiper {
+  position: relative;
+}
+
+.events__swiper-container {
+  overflow: hidden;
+}
+
+.events__btn {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+}
+
+.events__button-prev {
+  left: 0;
+  transform: translateX(-25px);
+}
+
+.events__button-next {
+  right: 0;
+  transform: translateX(25px);
+}
+
+.events__btn:focus-visible .events__icon path {
+  outline: none;
+  fill: #ECECEC;
+  stroke: var(--color-promo)
+}
+
+.events__btn:hover .events__icon path {
+  fill: #D1A9F0;
+}
+
+.events__btn:active .events__icon path {
+  fill: #D1A9F0;
+  stroke: var(--color-promo)
+}
+
+.events__btn:disabled .events__icon path {
+  display: none;
+  pointer-events: none;
+}
+
+.events__btn path {
+  stroke: var(--color-white);
+  transition: fill .3s ease, stroke .3s ease;
+}
+
+.events__swiper-slide {
+  height: 700px;
+}
+
 .events__article {
   width: 500px;
-  min-height: 700px;
-  border: 1px solid #CACACA;
+  height: 100%;
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
+  outline: 1px solid #CACACA;
 }
 
 .article-1 {
@@ -1163,16 +1216,8 @@ p {
   background-image: url('/img/events__5.jpg');
 }
 
-.events__item {
-  margin-right: 50px;
-}
-
-.events__item:nth-child(3n) {
-  margin-right: 0;
-}
-
 .article__content {
-  min-height: 700px;
+  height: 100%;
   padding: 315px 50px 45px;
   flex-direction: column;
   align-items: start;
@@ -1296,13 +1341,6 @@ p {
 .partners__btn:active .partners__icon path {
   fill: #D1A9F0;
   stroke: var(--color-promo)
-}
-
-.partners__btn:disabled .partners__icon path {
-  fill: #ECECEC;
-  opacity: .3;
-  cursor: auto;
-  pointer-events: none;
 }
 
 .partners__btn path {

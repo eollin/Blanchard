@@ -15,19 +15,19 @@ const swiper = new Swiper('.hero__swiper-container', {
 
 });
 
-const swiper2 = new Swiper('.swiper-container-2', {
+const swiper2 = new Swiper('.gallery__swiper-container', {
   slidesPerView: 3,
   slidesPerGroup: 3,
   spaceBetween: 50,
   loop: false,
   navigation: {
-    nextEl: '.swiper-button-next-2',
-    prevEl: '.swiper-button-prev-2',
+    nextEl: '.gallery__button-next',
+    prevEl: '.gallery__button-prev',
     hideOnClick: 'false'
   },
 
   pagination: {
-    el: '.swiper-pagination-2',
+    el: '.gallery__swiper-pagination',
     type: 'fraction',
     clickable: true,
   },
@@ -39,12 +39,28 @@ const swiper2 = new Swiper('.swiper-container-2', {
 
 const swiper3 = new Swiper('.partners__swiper-container', {
   slidesPerView: 3,
-  // slidesPerGroup: 3,
+  slidesPerGroup: 3,
   spaceBetween: 50,
-  loop: true,
+  loop: false,
   navigation: {
     nextEl: '.partners__button-next',
     prevEl: '.partners__button-prev',
+    hideOnClick: 'false'
+  },
+
+  a11y: {
+    paginationBulletMessage: "Перейти к слайду {{index}}"
+  },
+});
+
+const swiper4 = new Swiper('.events__swiper-container', {
+  slidesPerView: 3,
+  // slidesPerGroup: 3,
+  spaceBetween: 50,
+  loop: false,
+  navigation: {
+    nextEl: '.events__button-next',
+    prevEl: '.events__button-prev',
     hideOnClick: 'false'
   },
 
