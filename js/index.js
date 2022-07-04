@@ -174,3 +174,44 @@ tippy('#myButton-three', {
   duration: 1000,
   theme: 'promo',
 });
+
+// form
+let validation = new JustValidate('#form',{
+  errorLabelStyle: {
+    color: '#D11616',
+  },
+  errorFieldCssClass: 'is-invalid'
+})
+
+let selector = document.querySelector("#phone");
+let im = new Inputmask("+375 (99) 999-99-99");
+im.mask(selector)
+
+validation.addField ("#name", [
+  {
+    rule: 'required',
+    errorMessage: 'Вы не ввели имя'
+  },
+  {
+    rule: 'minLength',
+    value: 2,
+    errorMessage: 'Минимум два символа'
+  },
+])
+.addField ("#phone", [
+  {
+    validator: (value) => {
+      const phone = selector.inputmask.unmaskedvalue()
+      return Boolean(Number(phone) && phone.length > 0)
+    },
+    errorMessage: 'Вы не ввели телефон'
+  },
+  {
+    validator: (value) => {
+      const phone = selector.inputmask.unmaskedvalue()
+      return Boolean(Number(phone) && phone.length === 9)
+    },
+    errorMessage: 'Введите телефон полностью'
+  },
+])
+

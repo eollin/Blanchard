@@ -1003,10 +1003,22 @@
           <h3 class="contacts__info">Шоурум №4</h3>
           <p class="contacts__descr descr">Леонтьевский переулок, дом 5/1</p>
         </div>
-        <form class="form" action="">
-          <input class="form__input" type="text" placeholder="Имя*">
-          <input class="form__input" type="tel" placeholder="Телефон*">
-          <button class="form__btn btn-reset">Заказать обратный звонок</button>
+        <form id="form" class="form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="form__input-box">
+            <input aria-label="Введите имя" class="form__input"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Имя*">
+          </div>
+          <div class="form__input-box">
+            <input aria-label="Введите телефон" class="form__input"
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="Телефон*">
+          </div>
+          <button class="form__btn btn-reset" type="submit">Заказать обратный звонок</button>
         </form>
         <div class="contacts__info">
           <p class="contacts__info-text">Связаться в один клик</p>
@@ -1074,6 +1086,8 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 
