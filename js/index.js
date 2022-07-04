@@ -155,3 +155,22 @@ document.querySelectorAll('.tabs-nav__btn').forEach(function (tabsBtn) {
     document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
   });
 });
+
+// tooltips
+tippy('#myButton-one', {
+  content: 'Инвариант продолжает бессознательный маньеризм, однако само по себе состояние игры всегда амбивалентно.',
+  duration: 1000,
+  theme: 'promo',
+});
+
+tippy('#myButton-two', {
+  content: 'Идея самоценности искусства монотонно выстраивает эйдос.',
+  duration: 1000,
+  theme: 'promo',
+});
+
+tippy('#myButton-three', {
+  content: ' Целое образа аккумулирует невротический символический метафоризм.',
+  duration: 1000,
+  theme: 'promo',
+});

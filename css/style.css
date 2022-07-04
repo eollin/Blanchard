@@ -1273,7 +1273,7 @@ p {
 
 /* projects */
 .projects__descr {
-  width: 70%;
+  width: 71%;
   margin-bottom: 30px;
 }
 
@@ -1282,6 +1282,59 @@ p {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+}
+
+.projects__link {
+  color: var(--color-promo);
+  transition-property: color;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+.projects__link:focus-visible {
+  outline: solid 4px var(--color-promo);
+  outline-offset: -1px;
+  background-color: var(--color-promo);
+  color: var(--color-white);
+}
+
+.projects__link:hover {
+  color: var(--color-hover);
+}
+
+.projects__link:active {
+  color: var(--color-active);
+}
+
+.myButton-icon {
+  transform: translateY(2px);
+  /* transition: fill 3s ease !important; */
+}
+
+.myButton-icon:focus-visible {
+  fill: #D1A9F0;
+}
+
+.myButton-icon:hover {
+  fill: #D1A9F0;
+}
+
+.myButton-icon:active {
+  fill: var(--color-promo);
+}
+
+.myButton-icon:active .myButton-fill {
+  fill: var(--color-white);
+}
+
+.tippy-box[data-theme~='promo'] {
+  background-color: var(--color-promo);
+  color: var(--color-white);
+  opacity: .9;
+}
+
+.tippy-box[data-theme~='promo'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--color-promo);
 }
 
 .partners__swiper {
