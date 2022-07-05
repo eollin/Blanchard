@@ -9,13 +9,147 @@
   }
 
   .nav__btn,
-  .header__nav,
   .header__menu {
     display: none;
   }
 
+    /* burger */
+  .nav__btn-burger {
+    display: none;
+  }
+
+  .burger {
+    position: relative;
+    display: none;
+    width: 36px;
+    height: 28px;
+    transform: translateY(-5px);
+  }
+
+  .burger__line,
+  .burger__line::before,
+  .burger__line::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-white);
+    transition: transform 0.3s ease, width 0.3s ease;
+  }
+
+  .burger__line::before,
+  .burger__line::after {
+    content: '';
+  }
+
+  .burger__line::before {
+    transform: translateY(-11px);
+    width: 36px;
+  }
+
+  .burger__line::after {
+    transform: translateY(11px);
+    width: 22px;
+  }
+
   .nav__burger {
     display: block;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: -500px;
+    top: 0;
+    width: 35%;
+    min-width: 250px;
+    height: 100vh;
+    z-index: 900;
+    padding: 50px;
+    padding-top: 120px;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: auto;
+    transition: visibility .5s ease, transform .5s ease;
+  }
+
+  .nav__btn-burger {
+    display: block;
+    padding: 19px 88px;
+    font-size: 18px;
+    color: var(--color-white);
+    border: 2px solid var(--color-promo);
+    border-radius: 100px;
+  }
+
+  .nav__btn-burger:focus-visible {
+    outline: solid 2px var(--color-promo);
+    outline-offset: 2px;
+  }
+
+  .nav__btn-burger:hover {
+    color: var(--color-white);
+    background-color: var(--color-promo);
+  }
+
+  .nav__btn-burger:active {
+    border: solid 2px #D1A9F0;
+    background-color: var(--color-active);
+  }
+
+  .btn__icon-burger {
+    margin-right: 4px;
+  }
+
+  .header__nav .nav__list {
+    flex-direction: column;
+  }
+
+  .header__nav .nav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .header__nav .nav__item:last-child {
+    margin-bottom: 140px;
+  }
+
+  .header__nav .nav__link {
+    font-size: 20px;
+  }
+
+  .header__nav--active {
+    transform: translateX(500px);
+  }
+
+  .burger--active {
+    z-index: 1000;
+  }
+
+  .burger--active
+  .burger__line {
+    height: 0;
+  }
+
+  .burger--active
+  .burger__line::before {
+    transform: rotate(45deg);
+  }
+
+  .burger--active
+  .burger__line::after {
+    width: 36px;
+    transform: rotate(-45deg);
+  }
+
+  .burger {
+    display: block;
+    margin-right: 50px;
+    flex-shrink: 0;
   }
 
   .header__search-1280 {

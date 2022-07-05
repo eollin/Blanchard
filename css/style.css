@@ -490,43 +490,6 @@ p {
   background-color: var(--color-white);
 }
 
-/* burger */
-.burger {
-  position: relative;
-  display: none;
-  width: 36px;
-  height: 28px;
-  transform: translateY(-5px);
-}
-
-.burger__line,
-.burger__line::before,
-.burger__line::after {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -1px;
-  width: 28px;
-  height: 3px;
-  background-color: var(--color-white);
-  transition: background-color 0.3s ease, width 0.3s ease;
-}
-
-.burger__line::before,
-.burger__line::after {
-  content: '';
-}
-
-.burger__line::before {
-  transform: translateY(-11px);
-  width: 36px;
-}
-
-.burger__line::after {
-  transform: translateY(11px);
-  width: 22px;
-}
-
 /* search */
 .header__search {
   align-items: center;
