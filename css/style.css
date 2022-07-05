@@ -139,6 +139,7 @@ p {
 
 .header__background {
   background-color: #000;
+  height: 100px;
 }
 
 .header__container {
@@ -216,17 +217,13 @@ p {
   margin-left: 5px;
 }
 
-.nav__burger {
-  display: none;
-}
-
 /* header__dropdown */
 .header__menu {
   padding: 23px 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.hero__menu-container {
+.header__menu-container {
   align-items: center;
   justify-content: space-between;
 }
@@ -493,9 +490,50 @@ p {
   background-color: var(--color-white);
 }
 
+/* burger */
+.burger {
+  position: relative;
+  display: none;
+  width: 36px;
+  height: 28px;
+  transform: translateY(-5px);
+}
+
+.burger__line,
+.burger__line::before,
+.burger__line::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  width: 28px;
+  height: 3px;
+  background-color: var(--color-white);
+  transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.burger__line::before,
+.burger__line::after {
+  content: '';
+}
+
+.burger__line::before {
+  transform: translateY(-11px);
+  width: 36px;
+}
+
+.burger__line::after {
+  transform: translateY(11px);
+  width: 22px;
+}
+
 /* search */
 .header__search {
   align-items: center;
+}
+
+.header__search-1280 {
+  display: none;
 }
 
 .search__button {
@@ -537,12 +575,10 @@ p {
 /* hero */
 .hero {
   position: relative;
-  height: 100%;
-  min-height: 100vh;
+  min-height: 800px;
 }
 
 .hero__swiper-container {
-  min-height: 100vh;
   position: absolute;
   left: 0;
   right: 0;
@@ -563,7 +599,7 @@ p {
   top: 0;
   z-index: 5;
   position: absolute;
-  padding-top: 280px;
+  padding-top: 233px;
   pointer-events: none;
 }
 
@@ -894,18 +930,22 @@ p {
 }
 
 .gallery__swiper-slide {
+  flex-shrink: 0;
   height: 350px;
+  width: 350px;
+  background-position: center;
 }
 
 /* catalog */
-.catalog__left {
+.tabs-content {
+  justify-content: space-between;
   max-width: 750px;
   margin-right: 50px;
 }
 
 .catalog__descr {
   margin-bottom: 50px;
-  width: 70%;
+  width: 80%;
 }
 
 .catalog__img {
@@ -935,11 +975,12 @@ p {
 
 /* accordion */
 .accordion {
-  width: 800px;
+  width: 100%;
 }
 
 .ui-accordion .ui-accordion-header {
   height: 114px;
+  width: 100%;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1052,6 +1093,8 @@ p {
 }
 
 .accordion__painter-btn {
+  flex-shrink: 0;
+  text-align: left;
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   transition: border-bottom .3s ease;
@@ -1191,7 +1234,8 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   outline: 1px solid #CACACA;
-  outline-offset: -2px;
+  outline-offset: -1px;
+  border-bottom: 1px solid #CACACA;
 }
 
 .article-1 {
@@ -1443,7 +1487,7 @@ p {
   padding-left: 20px;
   font-size: 12px;
   font-weight: 400;
-  transform: translateY(-68px);
+  transform: translateY(-66px);
 }
 
 .form__input::placeholder {

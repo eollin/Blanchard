@@ -1,3 +1,66 @@
-@media (max-width: 1800px) {
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 50px;
+  }
+
+  .header__container {
+    padding-top: 29px;
+  }
+
+  .nav__btn,
+  .header__nav,
+  .header__menu {
+    display: none;
+  }
+
+  .nav__burger {
+    display: block;
+  }
+
+  .header__search-1280 {
+    display: block;
+  }
+
+  .hero {
+    min-height: 768px;
+  }
+
+  .hero__content {
+    padding-top: 205px;
+  }
+
+  .hero__descr {
+    width: 60%;
+    margin-bottom: 92px;
+  }
+
+  .about__descr {
+    width: 90%;
+  }
+
+  .gallery {
+    min-height: 560px;
+  }
+
+  .choices {
+    width: 280px;
+  }
+
+  .gallery__swiper-container {
+    width: 670px;
+  }
+
+  .gallery__swiper-slide {
+    width: 310px !important;
+  }
+
+  .catalog__descr {
+    width: 90%;
+  }
+
+  .events__article {
+    width: 290px;
+  }
 
 }

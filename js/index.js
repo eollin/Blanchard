@@ -16,9 +16,20 @@ const swiper = new Swiper('.hero__swiper-container', {
 });
 
 const swiper2 = new Swiper('.gallery__swiper-container', {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 50,
+  breakpoints: {
+    // when window width is >= 320px
+    1400: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 50
+    },
+  },
   loop: false,
   navigation: {
     nextEl: '.gallery__button-next',
@@ -41,7 +52,7 @@ const swiper3 = new Swiper('.partners__swiper-container', {
   slidesPerView: 3,
   slidesPerGroup: 3,
   spaceBetween: 50,
-  loop: false,
+  loop: true,
   navigation: {
     nextEl: '.partners__button-next',
     prevEl: '.partners__button-prev',
@@ -96,9 +107,7 @@ ymaps.ready(init);
 // simplebar
 document.querySelectorAll(".dropdown__simplebar").forEach(dropdown => {
   new SimpleBar(dropdown, {
-  /* чтобы изначально ползунок был виден */
   autoHide: false,
-  /* с помощью этого значения вы можете управлять высотой ползунка*/
   scrollbarMaxSize: 25,
 });
 })
@@ -159,19 +168,20 @@ document.querySelectorAll('.tabs-nav__btn').forEach(function (tabsBtn) {
 // tooltips
 tippy('#myButton-one', {
   content: 'Инвариант продолжает бессознательный маньеризм, однако само по себе состояние игры всегда амбивалентно.',
-  duration: 1000,
+  duration: [500, 0],
   theme: 'promo',
+  placement: 'top-start',
 });
 
 tippy('#myButton-two', {
   content: 'Идея самоценности искусства монотонно выстраивает эйдос.',
-  duration: 1000,
+  duration: [500, 0],
   theme: 'promo',
 });
 
 tippy('#myButton-three', {
   content: ' Целое образа аккумулирует невротический символический метафоризм.',
-  duration: 1000,
+  duration: [500, 0],
   theme: 'promo',
 });
 
