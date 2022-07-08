@@ -237,12 +237,33 @@
     width: 670px;
   }
 
-  .gallery__swiper-slide {
-    width: 310px !important;
+  .events__swiper-pagination {
+    visibility: visible;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #666666;
+  }
+
+  .events__btn {
+    display: none;
   }
 
   .events__article {
-    width: 290px;
+    width: calc(100% - 50px / 3);
+  }
+
+  .article__info {
+    text-align: right;
+  }
+
+  .article__content {
+    padding: 215px 30px 45px;
   }
 
   .partners__swiper-container {

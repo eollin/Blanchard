@@ -52,13 +52,13 @@ const swiper3 = new Swiper('.partners__swiper-container', {
     // when window width is >= 320px
     1400: {
       slidesPerView: 3,
-      slidesPerGroup: 3,
+      slidesPerGroup: 1,
       spaceBetween: 50,
     },
     // when window width is >= 480px
     480: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       spaceBetween: 50
     },
   },
@@ -75,14 +75,30 @@ const swiper3 = new Swiper('.partners__swiper-container', {
 });
 
 const swiper4 = new Swiper('.events__swiper-container', {
-  slidesPerView: 3,
-  // slidesPerGroup: 3,
-  spaceBetween: 50,
+  breakpoints: {
+    // when window width is >= 320px
+    1400: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 25,
+    },
+  },
   loop: false,
   navigation: {
     nextEl: '.events__button-next',
     prevEl: '.events__button-prev',
     hideOnClick: 'false'
+  },
+
+  pagination: {
+    el: '.events__swiper-pagination',
+    type: 'bullets',
   },
 
   a11y: {
