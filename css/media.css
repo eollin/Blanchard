@@ -14,10 +14,6 @@
   }
 
     /* burger */
-  .nav__btn-burger {
-    display: none;
-  }
-
   .burger {
     position: relative;
     display: none;
@@ -73,11 +69,14 @@
     padding: 50px;
     padding-top: 120px;
     background-color: rgba(0, 0, 0, 0.9);
-    overflow-y: auto;
     transition: visibility .5s ease, transform .5s ease;
   }
 
-  .nav__btn-burger {
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .nav__btn-mobile {
     display: block;
     padding: 19px 88px;
     font-size: 18px;
@@ -86,22 +85,22 @@
     border-radius: 100px;
   }
 
-  .nav__btn-burger:focus-visible {
+  .nav__btn-mobile:focus-visible {
     outline: solid 2px var(--color-promo);
     outline-offset: 2px;
   }
 
-  .nav__btn-burger:hover {
+  .nav__btn-mobile:hover {
     color: var(--color-white);
     background-color: var(--color-promo);
   }
 
-  .nav__btn-burger:active {
+  .nav__btn-mobile:active {
     border: solid 2px #D1A9F0;
     background-color: var(--color-active);
   }
 
-  .btn__icon-burger {
+  .btn__icon-mobile {
     margin-right: 4px;
   }
 
@@ -115,7 +114,7 @@
   }
 
   .header__nav .nav__item:last-child {
-    margin-bottom: 140px;
+    margin-bottom: 120px;
   }
 
   .header__nav .nav__link {
@@ -152,16 +151,61 @@
     flex-shrink: 0;
   }
 
-  .header__search-1280 {
-    display: block;
+  /* search */
+  .header__search-mobile {
+    position: absolute;
+    visibility: hidden;
+    right: 0;
+    height: 50px;
+    z-index: 2;
+    padding: 10px;
+    background-color: #000;
+    transform: translateX(120%) translateY(-4px);
+    transition: visibility .5s ease, transform .5s ease;
   }
 
+  .header__search-mobile--active {
+    visibility: visible;
+    transform: translateX(-50px) translateY(-4px);
+  }
+
+  .search__btn-mobile {
+    margin-right: 12px;
+    transform: translateY(2px);
+  }
+
+  .search__close {
+    transform: translateY(9px);
+  }
+
+  .search__input-mobile {
+    margin-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 218px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.85);
+    transition: border-bottom .3s ease;
+  }
+
+  .search__input-mobile:focus {
+    outline: none;
+    border-bottom: 1px solid var(--color-active);
+  }
+
+  .search__input-mobile:active {
+    border-bottom: 1px solid var(--color-active);
+  }
+
+  /* hero */
   .hero {
     min-height: 768px;
   }
 
   .hero__content {
-    padding-top: 205px;
+    padding-top: 105px;
   }
 
   .hero__descr {

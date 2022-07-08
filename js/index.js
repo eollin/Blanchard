@@ -252,3 +252,28 @@ menuLinks.forEach(function (el) {
 
   })
 })
+
+// search
+let search = document.querySelector('.search__btn-click');
+let input = document.querySelector('.header__search-mobile');
+let closed = document.querySelector('.search__close');
+
+search.addEventListener('click',
+
+  function () {
+
+    search.classList.toggle('search__btn-click--active');
+
+    input.classList.toggle('header__search-mobile--active');
+
+  })
+
+closed.addEventListener('click',
+
+  function () {
+
+    search.classList.remove('search__btn-click--active');
+
+    input.classList.remove('header__search-mobile--active');
+
+  })

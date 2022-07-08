@@ -209,6 +209,14 @@ p {
   fill: var(--color-promo);
 }
 
+.nav__btn-mobile {
+  display: none;
+}
+
+.nav__burger {
+  display: none;
+}
+
 .btn__icon path {
   transition: fill .3s ease;
 }
@@ -491,15 +499,7 @@ p {
 }
 
 /* search */
-.header__search {
-  align-items: center;
-}
-
-.header__search-1280 {
-  display: none;
-}
-
-.search__button {
+.search__btn {
   margin-right: 10px;
   transform: translateY(3px);
 }
