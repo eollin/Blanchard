@@ -12,7 +12,6 @@ const swiper = new Swiper('.hero__swiper-container', {
   fadeEffect: {
     crossFade: true
   },
-
 });
 
 const swiper2 = new Swiper('.gallery__swiper-container', {
@@ -49,9 +48,20 @@ const swiper2 = new Swiper('.gallery__swiper-container', {
 });
 
 const swiper3 = new Swiper('.partners__swiper-container', {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 50,
+  breakpoints: {
+    // when window width is >= 320px
+    1400: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 50
+    },
+  },
   loop: true,
   navigation: {
     nextEl: '.partners__button-next',

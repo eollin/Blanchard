@@ -499,6 +499,11 @@ p {
 }
 
 /* search */
+.header__search-mobile,
+.search__btn-click {
+  display: none;
+}
+
 .search__btn {
   margin-right: 10px;
   transform: translateY(3px);
@@ -1473,7 +1478,13 @@ p {
   background-color: #ECECEC;
 }
 
+.form {
+  width: 100%;
+}
+
 .form__btn {
+  width: 100%;
+  max-width: 343px;
   padding: 14px 35px;
   font-weight: 700;
   font-size: 18px;

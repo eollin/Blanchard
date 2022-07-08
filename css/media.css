@@ -152,13 +152,19 @@
   }
 
   /* search */
+  .search__btn-click {
+    display: block;
+  }
+
   .header__search-mobile {
+    display: flex;
     position: absolute;
     visibility: hidden;
     right: 0;
     height: 50px;
     z-index: 2;
     padding: 10px;
+    padding-right: 0;
     background-color: #000;
     transform: translateX(120%) translateY(-4px);
     transition: visibility .5s ease, transform .5s ease;
@@ -213,8 +219,10 @@
     margin-bottom: 92px;
   }
 
-  .about__descr {
-    width: 90%;
+  .about__descr,
+  .catalog__descr,
+  .projects__descr {
+    width: 95%;
   }
 
   .gallery {
@@ -233,12 +241,25 @@
     width: 310px !important;
   }
 
-  .catalog__descr {
-    width: 90%;
-  }
-
   .events__article {
     width: 290px;
+  }
+
+  .contacts__container {
+    flex-wrap: wrap;
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  .contacts__adress,
+  .form {
+    margin-bottom: 30px;
+  }
+
+  .form__input-box,
+  .form__input {
+    max-width: 270px;
+    width: 100%;
   }
 
 }
