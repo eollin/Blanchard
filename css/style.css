@@ -1349,6 +1349,7 @@ p {
   border-top-color: var(--color-promo);
 }
 
+/* partners__swiper */
 .partners__swiper {
   position: relative;
   width: 100%;
@@ -1360,7 +1361,13 @@ p {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1450px;
+  max-width: 85%;
+}
+
+.partners__swiper-slide-img,
+.partners__swiper-slide {
+  width: 100%;
+  max-width: 450px;
 }
 
 .partners__swiper-slide-img {

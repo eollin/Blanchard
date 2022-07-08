@@ -245,6 +245,10 @@
     width: 290px;
   }
 
+  .partners__swiper-container {
+    max-width: 85%;
+  }
+
   .contacts__container {
     flex-wrap: wrap;
     padding-top: 43px;
