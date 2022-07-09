@@ -1,3 +1,16 @@
+@media (max-width: 1600px) {
+  .contacts__container {
+    flex-wrap: wrap;
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  .contacts__adress,
+  .form {
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -271,20 +284,8 @@
   }
 
   .contacts__container {
-    flex-wrap: wrap;
     padding-top: 43px;
     padding-bottom: 43px;
-  }
-
-  .contacts__adress,
-  .form {
-    margin-bottom: 30px;
-  }
-
-  .form__input-box,
-  .form__input {
-    max-width: 270px;
-    width: 100%;
   }
 
 }

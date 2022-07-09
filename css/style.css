@@ -1444,6 +1444,10 @@ p {
   line-height: 32px;
 }
 
+.contacts__descr {
+  margin-right: 20px;
+}
+
 .form__input-box {
   margin-right: 20px;
 }
@@ -1454,6 +1458,12 @@ p {
   border: 1px solid #333333;
   border-radius: 100px;
   transition: background-color .3s ease;
+}
+
+.form__input-box,
+.form__input {
+  max-width: 270px;
+  width: 100%;
 }
 
 .form__input.is-invalid {
@@ -1489,13 +1499,15 @@ p {
 }
 
 .form {
-  width: 100%;
+  align-items: center;
 }
 
 .form__btn {
+  white-space: nowrap;
   width: 100%;
   max-width: 343px;
   padding: 14px 35px;
+  margin-right: 20px;
   font-weight: 700;
   font-size: 18px;
   color: var(--color-promo);
@@ -1520,6 +1532,7 @@ p {
 }
 
 .contacts__info-text {
+  white-space: nowrap;
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 24px;
