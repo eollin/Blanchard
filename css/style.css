@@ -1151,6 +1151,7 @@ p {
 
 .events__swiper-container {
   overflow: hidden;
+  position: relative;
 }
 
 .events__btn {
@@ -1194,9 +1195,14 @@ p {
   transition: fill .3s ease, stroke .3s ease;
 }
 
+.events__swiper-slide,
 .events__article {
   height: 100%;
-  width: calc(100% - 100px / 3);
+  min-height: 700px;
+}
+
+.events__article {
+  width: calc(100% - 2px / 3);
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;

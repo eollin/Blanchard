@@ -9,6 +9,10 @@
   .form {
     margin-bottom: 30px;
   }
+
+  .article__content {
+    padding: 270px 50px 45px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -250,8 +254,14 @@
     width: 670px;
   }
 
+  .events__swiper-wrapper {
+    margin-bottom: 30px;
+  }
+
   .events__swiper-pagination {
+    position: absolute;
     visibility: visible;
+    text-align: center;
   }
 
   .swiper-pagination-bullet {
