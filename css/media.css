@@ -13,6 +13,10 @@
   .article__content {
     padding: 270px 50px 45px;
   }
+
+  .accordion__painter-list {
+    columns: 2;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -253,6 +257,20 @@
   .gallery__swiper-container {
     width: 670px;
   }
+
+  /* .accordion {
+    width: 437px;
+  }
+
+  .tabs-content {
+    max-width: 437px;
+    width: 100%;
+  }
+
+  .tabs-content img {
+    max-width: 437px;
+    width: 100%;
+  } */
 
   .events__swiper-wrapper {
     margin-bottom: 30px;
