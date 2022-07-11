@@ -340,5 +340,33 @@
     padding-top: 115px;
   }
 
+  .catalog__descr {
+    margin-bottom: 30px;
+  }
+
+  .catalog__bottom {
+    flex-direction: column-reverse;
+  }
+
+  .accordion__painter-list {
+    columns: 3;
+  }
+
+  .catalog__right {
+    margin-bottom: 50px;
+  }
+
+  .catalog__right,
+  .tabs-content {
+    margin-right: 0;
+    width: 100%;
+    max-width: 804px;
+  }
+
+  .tabs-content img {
+    width: 100%;
+    max-width: 804px;
+  }
+
 }
 
