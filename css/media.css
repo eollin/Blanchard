@@ -368,5 +368,46 @@
     max-width: 804px;
   }
 
+  .article__content {
+    padding: 260px 30px 45px;
+  }
+
+  .events__article {
+    width: calc(100% - 2px / 2);
+    min-height: 650px;
+  }
+
+  .events__swiper-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .form {
+    flex-wrap: wrap;
+  }
+
+  .form__input-box {
+    margin-bottom: 12px;
+  }
+
+  .form__input-box,
+  .form__input,
+  .form__btn {
+    max-width: 323px;
+    width: 100%;
+  }
+
+  .form__input-box {
+    margin-right: 0;
+  }
+
+  .form__btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 50;
+  }
+
+  .form__input-box:first-child {
+    margin-right: 20px;
+  }
 }
 
