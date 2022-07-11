@@ -315,5 +315,30 @@
     width: 90%;
   }
 
+  .gallery {
+    min-height: 890px;
+  }
+
+  .gallery__container {
+    flex-direction: column;
+  }
+
+  .gallery__content {
+    margin-bottom: 50px;
+  }
+
+  .gallery__top {
+    margin-right: 100px;
+  }
+
+  .gallery__content {
+    min-height: fit-content;
+    flex-direction: row;
+  }
+
+  .gallery__checkbox {
+    padding-top: 115px;
+  }
+
 }
 
