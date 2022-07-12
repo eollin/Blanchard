@@ -411,3 +411,87 @@
   }
 }
 
+@media (max-width: 540px) {
+  .container {
+    max-width: 540px;
+    padding: 0 15px;
+  }
+
+  .header__background {
+    height: 50px;
+    padding-top: 12px;
+  }
+
+  .header__logo {
+    width: 90px;
+  }
+
+  .nav__burger {
+    margin-right: 20px;
+    width: 25px;
+  }
+
+  .burger__line {
+    width: 16px;
+    height: 2px;
+  }
+
+  .burger__line::before {
+    transform: translateY(-8px);
+    width: 25px;
+    height: 2px;
+  }
+
+  .burger__line::after {
+    transform: translateY(8px);
+    width: 10px;
+    height: 2px;
+  }
+
+  .search__icon-click {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* hero */
+  .hero {
+    min-height: 305px;
+  }
+
+  .hero__content {
+    padding-top: 30px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__title {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .hero__descr {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .hero__btn {
+    max-width: 200px;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* .about__descr,
+  .catalog__descr,
+  .projects__descr {
+    width: 95%; */
+  /* } */
+}

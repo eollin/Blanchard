@@ -153,6 +153,7 @@ p {
 .header__logo {
   width: 173px;
   margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .nav__item {
@@ -563,10 +564,9 @@ p {
 }
 
 .hero__content {
-  position: relative;
+  position: absolute;
   top: 0;
   z-index: 5;
-  position: absolute;
   padding-top: 233px;
   pointer-events: none;
 }
