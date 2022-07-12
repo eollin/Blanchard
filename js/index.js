@@ -23,10 +23,14 @@ const swiper2 = new Swiper('.gallery__swiper-container', {
       spaceBetween: 50,
     },
     // when window width is >= 480px
-    480: {
+    521: {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 50
+      spaceBetween: 50,
+    },
+    21: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
     },
   },
   loop: false,
@@ -88,7 +92,7 @@ const swiper4 = new Swiper('.events__swiper-container', {
       slidesPerGroup: 3,
       spaceBetween: 25,
     },
-    200: {
+    520: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
