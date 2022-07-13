@@ -16,13 +16,11 @@ const swiper = new Swiper('.hero__swiper-container', {
 
 const swiper2 = new Swiper('.gallery__swiper-container', {
   breakpoints: {
-    // when window width is >= 320px
     1400: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 50,
     },
-    // when window width is >= 480px
     521: {
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -53,13 +51,11 @@ const swiper2 = new Swiper('.gallery__swiper-container', {
 
 const swiper3 = new Swiper('.partners__swiper-container', {
   breakpoints: {
-    // when window width is >= 320px
     1400: {
       slidesPerView: 3,
       slidesPerGroup: 1,
       spaceBetween: 50,
     },
-    // when window width is >= 480px
     480: {
       slidesPerView: 2,
       slidesPerGroup: 1,
@@ -80,13 +76,11 @@ const swiper3 = new Swiper('.partners__swiper-container', {
 
 const swiper4 = new Swiper('.events__swiper-container', {
   breakpoints: {
-    // when window width is >= 1400px
     1400: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 50,
     },
-    // when window width is >= 480px
     993: {
       slidesPerView: 3,
       slidesPerGroup: 3,
