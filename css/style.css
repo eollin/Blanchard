@@ -1588,6 +1588,10 @@ p {
   filter: grayscale(1);
 }
 
+.map {
+  height: 700px;
+}
+
 /* footer */
 .footer {
   background-color: #000;
