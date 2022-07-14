@@ -400,7 +400,6 @@
   .form__input-box,
   .form__input,
   .form__btn {
-    max-width: 323px;
     width: 100%;
   }
 
@@ -659,6 +658,56 @@
 
   .partners__swiper-container {
     max-width: 75%;
+  }
+
+  .contacts {
+    border-top: none;
+  }
+
+  .contacts,
+  .contacts__adress {
+    margin-bottom: 20px;
+  }
+
+  .contacts__info {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .contacts__info-text {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .contacts__container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+
+  .form__btn-desktop {
+    display: none;
+  }
+
+  .form__btn-mobile {
+    display: block;
+    padding: 11px 35px;
+    width: 100%;
+    max-width: 128px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__input-box,
+  .form__input {
+    margin-right: 0;
+    width: 100%;
+    max-width: 500px;
   }
 }
 

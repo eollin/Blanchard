@@ -1522,6 +1522,10 @@ p {
   transition: color .3s ease, background-color .3s ease, border .3s ease;
 }
 
+.form__btn-mobile {
+  display: none;
+}
+
 .form__btn:focus-visible {
   outline: solid 2px var(--color-promo);
   outline-offset: 2px;
