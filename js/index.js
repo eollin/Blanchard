@@ -56,10 +56,14 @@ const swiper3 = new Swiper('.partners__swiper-container', {
       slidesPerGroup: 1,
       spaceBetween: 50,
     },
-    480: {
+    600: {
       slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 50
+      spaceBetween: 33,
+    },
+    21: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
     },
   },
   loop: true,
