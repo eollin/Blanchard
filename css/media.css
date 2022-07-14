@@ -1,4 +1,20 @@
 @media (max-width: 1600px) {
+  .menu__item {
+    margin-right: 50px;
+  }
+
+  .search__input {
+    width: 160px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  .nav__list {
+    margin-right: 20px;
+  }
+
   .contacts__container {
     flex-wrap: wrap;
     padding-top: 43px;
@@ -81,9 +97,9 @@
 
   .header__nav {
     position: absolute;
-    left: -500px;
+    left: -1280px;
     top: 0;
-    width: 40%;
+    width: 100%;
     height: 100vh;
     z-index: 900;
     padding: 50px;
@@ -142,7 +158,7 @@
   }
 
   .header__nav--active {
-    transform: translateX(500px);
+    transform: translateX(1280px);
   }
 
   .burger--active {
@@ -418,6 +434,23 @@
   }
 }
 
+@media (max-width: 700px) {
+  .hero__title {
+    font-size: 52px;
+    line-height: 65px;
+  }
+
+  .hero__descr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .accordion__painter-list {
+    columns: 2;
+  }
+}
+
 @media (max-width: 540px) {
   .container {
     max-width: 540px;
@@ -490,10 +523,20 @@
   }
 
   .header__nav {
-    left: -500px;
+    left: -550px;
     width: 100%;
     padding: 15px;
     padding-top: 60px;
+  }
+
+  .header__nav--active {
+    transform: translateX(550px);
+  }
+
+  .nav__btn-mobile{
+    padding: 11px 30px;
+    margin-bottom: 30px;
+    font-size: 12px;
   }
 
   .header__nav .nav__item:not(:last-child) {
@@ -755,5 +798,9 @@
 
   .events__swiper-wrapper {
     margin-bottom: 40px;
+  }
+
+  .partners__btn {
+    top: 25%;
   }
 }

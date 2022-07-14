@@ -95,6 +95,10 @@ const swiper4 = new Swiper('.events__swiper-container', {
       slidesPerGroup: 2,
       spaceBetween: 34,
     },
+    21: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
   },
   loop: false,
   navigation: {
