@@ -161,6 +161,11 @@ p {
       flex-shrink: 0;
 }
 
+.header__logo:focus-visible {
+  outline: 1px solid var(--color-active);
+  outline-offset: 5px;
+}
+
 .nav__item:not(:last-child) {
   margin-right: 62px;
 }
@@ -453,107 +458,107 @@ p {
 }
 
 .realism__1:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/realism__1.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__1.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/realism__1.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__1.jpg');
 }
 .realism__2:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/realism__2.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__2.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/realism__2.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__2.jpg');
 }
 .realism__3:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/realism__3.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__3.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/realism__3.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__3.jpg');
 }
 .realism__4:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/realism__4.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__4.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/realism__4.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/realism__4.jpg');
 }
 
 .impressionism__1:active:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/impressionism__1.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__1.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/impressionism__1.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__1.jpg');
 }
 .impressionism__2:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/impressionism__2.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__2.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/impressionism__2.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__2.jpg');
 }
 .impressionism__3:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/impressionism__3.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__3.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/impressionism__3.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__3.jpg');
 }
 .impressionism__4:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/impressionism__4.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__4.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/impressionism__4.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/impressionism__4.jpg');
 }
 
 .postimpressionism__1:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/postimpressionism__1.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__1.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/postimpressionism__1.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__1.jpg');
 }
 .postimpressionism__2:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/postimpressionism__2.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__2.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/postimpressionism__2.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__2.jpg');
 }
 .postimpressionism__3:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/postimpressionism__3.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__3.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/postimpressionism__3.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__3.jpg');
 }
 .postimpressionism__4:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/postimpressionism__4.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__4.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/postimpressionism__4.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/postimpressionism__4.jpg');
 }
 
 .avangard__1:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/avangard__1.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__1.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/avangard__1.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__1.jpg');
 }
 .avangard__2:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/avangard__2.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__2.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/avangard__2.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__2.jpg');
 }
 .avangard__3:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/avangard__3.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__3.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/avangard__3.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__3.jpg');
 }
 .avangard__4:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/avangard__4.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__4.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/avangard__4.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/avangard__4.jpg');
 }
 
 .futurism__1:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/futurism__1.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__1.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/futurism__1.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__1.jpg');
 }
 .futurism__2:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/futurism__2.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__2.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/futurism__2.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__2.jpg');
 }
 .futurism__3:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/futurism__3.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__3.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/futurism__3.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__3.jpg');
 }
 .futurism__4:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/futurism__4.jpg');
   background-image: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__4.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4))), url('/img/hero__select/futurism__4.jpg');
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/hero__select/futurism__4.jpg');
 }
 
@@ -586,6 +591,11 @@ p {
   -webkit-transform: translateY(3px);
       -ms-transform: translateY(3px);
           transform: translateY(3px);
+}
+
+.search__btn:focus-visible {
+  outline: 1px solid var(--color-active);
+  outline-offset: 2px;
 }
 
 .search__input {
@@ -799,7 +809,7 @@ p {
   transition: background-color .3s ease;
 }
 
-.choices__inner:focus-visible {
+.choices:focus-visible {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1022,6 +1032,15 @@ p {
           transform: translateY(-2px);
 }
 
+.swiper__btn:focus-visible {
+  outline: transparent;
+}
+
+.swiper__btn:focus-visible .swiper__icon path {
+  outline: transparent;
+  stroke: var(--color-active)
+}
+
 .swiper__btn:hover .swiper__icon path {
   fill: var(--color-promo);
 }
@@ -1112,7 +1131,8 @@ p {
   display: flex;
   padding: 0;
   width: 100%;
-  height: 114px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1168,6 +1188,16 @@ p {
 
 .accordion__item:last-child {
   border-bottom: 1px solid #CACACA;
+}
+
+/* accordion__item:focus*/
+.accordion__title:focus-visible {
+  outline: transparent;
+  background-color: var(--color-promo);
+}
+
+.accordion__title:focus-visible.ui-accordion-header {
+  color: var(--color-white);
 }
 
 /* accordion__item:hover */
@@ -1257,6 +1287,11 @@ p {
   -webkit-transition: border-bottom .3s ease;
   -o-transition: border-bottom .3s ease;
   transition: border-bottom .3s ease;
+}
+
+.accordion__painter-btn:focus-visible {
+  outline: transparent;
+  background-color: var(--color-promo);
 }
 
 .accordion__painter-btn:hover {
@@ -1363,6 +1398,10 @@ p {
           transform: translateX(25px);
 }
 
+.events__btn:focus-visible {
+  outline: none;
+}
+
 .events__btn:focus-visible .events__icon path {
   outline: none;
   fill: #ECECEC;
@@ -1467,7 +1506,6 @@ p {
 }
 
 .article__btn {
-  padding-top: 30px;
   padding-bottom: 3px;
   color: var(--color-promo);
   border-bottom: 1px solid var(--color-promo);
@@ -1541,14 +1579,20 @@ p {
   color: var(--color-active);
 }
 
-.myButton-icon {
+.myButton {
   -webkit-transform: translateY(2px);
       -ms-transform: translateY(2px);
           transform: translateY(2px);
-  /* transition: fill 3s ease !important; */
+  -webkit-transition: fill 3s ease !important;
+  -o-transition: fill 3s ease !important;
+  transition: fill 3s ease !important;
 }
 
-.myButton-icon:focus-visible {
+.myButton:focus-visible {
+  outline: none;
+}
+
+.myButton:focus-visible .myButton-icon {
   fill: #D1A9F0;
 }
 
@@ -1606,6 +1650,16 @@ p {
   transition: filter .3s ease-in-out, opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
 }
 
+.partners__swiper-slide-link:focus-visible {
+  outline-offset: -1px;
+  outline: 1px solid var(--color-promo);
+}
+
+.partners__swiper-slide-img:focus-visible {
+  outline-offset: -1px;
+  outline: 1px solid var(--color-promo);
+}
+
 .partners__swiper-slide-img:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
@@ -1633,8 +1687,11 @@ p {
   right: 0;
 }
 
+.partners__btn:focus-visible {
+  outline: transparent;
+}
+
 .partners__btn:focus-visible .partners__icon path {
-  outline: none;
   fill: #ECECEC;
   stroke: var(--color-promo)
 }
@@ -1752,9 +1809,9 @@ p {
   color: var(--color-gray);
 }
 
-.form__input:focus {
+.form__input:focus-visible {
   outline: none;
-  background-color: var(--color-white);
+  background-color: #ECECEC;
 }
 
 .form__input:hover {
@@ -1837,6 +1894,7 @@ p {
 }
 
 .contacts__link:focus-visible {
+  outline: none;
   opacity: .5;
 }
 
@@ -1884,6 +1942,10 @@ p {
   -webkit-transition: fill .3s ease;
   -o-transition: fill .3s ease;
   transition: fill .3s ease;
+}
+
+.footer__link:focus-visible {
+  outline: none;
 }
 
 .footer__link:focus-visible .footer__icon path {
